@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="constraint_margin">8dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="new_list_height">100dp</dimen>
+    <dimen name="news_list_width">150dp</dimen>
+    <dimen name="news_card_height">250dp</dimen>
+    <dimen name="card_radius">15dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="news_title_txt_size">17sp</dimen>
+    <dimen name="news_title_left_margin">10dp</dimen>
+
+    <dimen name="news_detail_image">350dp</dimen>
+    <dimen name="news_detail_title">20sp</dimen>
+    <dimen name="news_detail_head">17sp</dimen>
+    <dimen name="news_detail_profile">60dp</dimen>
+    <dimen name="news_detail_profile_name">15sp</dimen>
+</resources>

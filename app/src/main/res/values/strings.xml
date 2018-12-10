@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TheGuardian</string>
+    <string name="title_home">Home</string>
+    <string name="title_section">Sections
+    </string>
+    <string name="title_search">Search</string>
+
+    <string name="share_subject">Read the latest news at </string>
+    <string name="share_body">Read more at </string>
+    <string name="share_intent">Share Via</string>
+
+    <string name="profile_article">Articles by </string>
+
+    <string name="API_KEY">68e66e95-8802-47f1-8eca-3aaf1dcdf17b</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

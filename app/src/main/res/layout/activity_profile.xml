@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/default_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="@dimen/news_detail_profile"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/news_detail_profile"
+                android:src="@drawable/ic_account" />
+
+            <TextView
+                android:id="@+id/progileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_toRightOf="@id/profileImage"
+                android:textSize="@dimen/news_title_txt_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progileTitle"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_toRightOf="@id/profileImage"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/profileArticles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileTwitter"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_toRightOf="@id/profileImage" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/constraint_margin"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+
+            <TextView
+                android:id="@+id/bioLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileImage"
+                android:layout_marginTop="@dimen/constraint_margin"
+                android:text="Bio"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileBio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bioLable" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/articleBy"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/news_title_txt_size"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/constraint_margin"
+            android:paddingBottom="@dimen/constraint_margin"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
+            android:text="Articles by "
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/profileArticlesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/articleBy">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
